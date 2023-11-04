@@ -9,16 +9,16 @@ body {
 .wrapper {
   position: fixed;
   height: auto;
-  left: 160px;
-  bottom: 560px;
-  width: auto;
+  left: 140px;
+  top: 50px;
+  width: 100%;
   margin: 0 auto;
   line-height: 30px;
   text-align: left;
 }
 header {
   width: 100%;
-  height: 130px;
+  height: 150px;
   background: white;
   position: fixed;
   line-height: 10px;
@@ -27,7 +27,7 @@ header {
   position: fixed;
   height: auto;
   left: 20px;
-  bottom: 550px;
+  top: 30px;
   width: 100px;
 }
 .categories {
@@ -38,20 +38,36 @@ header {
   padding: 200px;
 }
 .categories h2 {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  font-size: 30px;
+  white-space: nowrap;
+  margin-bottom: 50px;
 }
 .categories-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
 }
 .categories-list img {
-  width: 30%;
-  height: 70%;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
 }
 .single-category {
   border: 2px solid black;
-  padding: 10px;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.category-title {
+  font-size: 25px;
+  margin-top: 10px;
 }
 .footer {
   position: fixed;
@@ -62,4 +78,10 @@ header {
   line-height: 30px;
   text-align: center;
   background-color: black;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
 }
