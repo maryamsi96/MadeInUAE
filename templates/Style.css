@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 .wrapper {
@@ -31,7 +31,6 @@ header {
   width: 100px;
 }
 .categories {
-  font-family: "Roboto", sans-serif;
   max-width: 900px;
   margin: auto;
   width: 50%;
@@ -64,6 +63,8 @@ header {
   padding: 50px;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: black;
 }
 .category-title {
   font-size: 25px;
@@ -85,3 +86,4 @@ header {
     width: 100%;
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap");
